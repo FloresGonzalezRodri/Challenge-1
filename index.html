@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="principal">
+            <div id="div-izquierdo">
+                <textarea id="entrada" placeholder="Ingresa el texto aquí" oninput="verificarEntrada()"></textarea>
+                <div id="div-botones">
+                    <button id="button-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                    <button id="button-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                </div>            
+            </div>
+
+            <div id="div-derecho">
+                <p id="salida"></p>
+                <div id="div-salida-inicial">
+                    <img src="imagenes/muneco.png">
+                    <div>
+                        <p><strong>Ningún mensaje fue encontrado</strong></p>
+                        <p id="p-subleyenda">Ingresa el texto que deseas<br>encriptar o desencriptar</p>
+                    </div> 
+                </div>   
+                <button type="button" id="button-copiar" onclick="copiarTextoAlPortapapeles()">Copiar</button>                           
+            </div>
+
+        </div>    
+        <script src="encriptador.js"></script>
+    </body>
+</html>
