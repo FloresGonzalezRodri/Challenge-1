@@ -10,11 +10,11 @@ body
 {
     /*Caja*/
     display: flex;
-    margin: 8%;
     align-items: center;
 
     /*Disposicion del contenido*/
     justify-content: center;
+    align-self: self-start;
 }
 
 #entrada
@@ -59,17 +59,11 @@ button
     text-align: center;
 }
 
-#entrada::placeholder
-{
-    /*color: #0A3871;*/
-}
-
 #div-izquierdo
 {
     /*Caja*/
     display: inline-block;
     margin-right: 10%;
-    border-style: solid;
 
     /*Contenido*/
     text-align: center;
@@ -79,7 +73,6 @@ button
 {
     /*Caja*/
     display: inline-block;
-    border-style: solid;
     margin-left: auto;
     margin-right: auto;
 }
@@ -128,4 +121,10 @@ img
     /*Alinear horizontalmente al centro solo este elemento */
     margin-left: auto;
     margin-right: auto; 
+}
+
+#img-alura
+{
+    width: 75px;
+    margin-bottom: 0px;
 }
