@@ -1,4 +1,9 @@
-
+header
+{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
 
 body
 {
@@ -42,18 +47,51 @@ body
     background-color: #D8DFE8;
 }
 
+#button-desencriptar:hover
+{
+    background-color: white;
+}
+
+#button-desencriptar:active
+{
+    background-color: #D8DFE8;
+}
+
+
+#button-encriptar:hover
+{
+    background-color: rgb(2, 92, 160)
+}
+
+#button-encriptar:active
+{
+    background-color: #0A3871;
+}
+
 button
 {
     /*Caja*/
-    width: 180px;
-    border-radius: 24px;
-    padding: 24px;
+    width: 160px;
+    border-radius: 18px;
+    padding: 18px;
 
     /*Texto*/
     font-size: 16px;  
 
     /*Disposicion del contenido*/
     text-align: center;
+}
+
+#p-restricciones
+{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img[src="imagenes/Vector.png"]
+{
+    width:12px;
 }
 
 #div-izquierdo
@@ -65,7 +103,6 @@ button
     flex-direction: column;
     width: fit-content;
     /*Contenido*/
-    text-align: center;
 }
 
 #div-botones
@@ -80,26 +117,35 @@ button
     /*Caja*/
     display: flex;
     flex-direction: column;
-    border: solid;
-    background-color: white;
-    max-width: 280px;
-    height: 500px;
-    border-radius: 32px;
-    padding: 20px;
-    /*Centrar imagen horizontalmente*/
+    /*Alinear salida al inicio, boton al final y salida para nulo al centro verticalmente*/
+    justify-content: space-between;
+    /*Centrar contenido horizontalmente*/
     align-items:center;
-    /*Centrar texto horizontalmente*/
-    text-align:center;
-    /*Centrar imagen y texto verticalmente*/
-    justify-content:center;
+    border: solid rgb(146, 146, 146);
+    background-color: white;
+    width: 280px;
+    height: 450px;
+    border-radius: 26px;
+    padding: 20px;
+    
 }
 
-strong p
+#salida
 {
-    font-size: 24px;
+    align-self: flex-start;
 }
 
-#p-subleyenda
+#div-salida-inicial
+{
+    text-align: center;
+}
+
+p strong
+{
+    font-size: 16px;
+}
+
+#span-subleyenda
 {
     font-size: 12px;
 }
@@ -113,24 +159,28 @@ img[src="imagenes/muneco.png"]
 
 img[src="imagenes/alura.png"]
 {
-    position: absolute;
-    top: 30px;
-    left: 2%;
+    position: relative;
+    left: 30px;
+    height: 60%;
+
 }
 
 #button-copiar
 {
-    align-self: flex-end;
+    background-color: #D8DFE8;
     /*Alinear horizontalmente al centro solo este elemento */
-    margin-left: auto;
-    margin-right: auto; 
 }
 
-#img-alura
+#button-copiar:hover
 {
-    width: 75px;
-    margin-bottom: 0px;
+    background-color: white;
 }
+
+#button-copiar:active
+{
+    background-color: #D8DFE8;
+}
+
 
 footer
 {
@@ -138,6 +188,7 @@ footer
     justify-content: center;
     align-items: center;
     text-align: center;
+    align-self: flex-end;
     height: 80px;
     background: linear-gradient(to bottom, #033e72, #001f3f);
 

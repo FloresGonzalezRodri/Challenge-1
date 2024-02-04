@@ -1,15 +1,9 @@
-verificarEntrada();
-
 function verificarEntrada()
 {
     let entrada=document.getElementById('entrada').value;
 
     if(entrada=="")
     {
-        let divDerecho=document.getElementById('div-derecho');
-        divDerecho.style.textAlign="center";
-        divDerecho.style.justifyContent="center";
-        divDerecho.style.alignItems="center";
         document.getElementById('div-salida-inicial').style.display="unset";
         document.getElementById("salida").innerHTML="";
     }
@@ -17,11 +11,6 @@ function verificarEntrada()
 
 function hideSalidaInicial()
 {
-    let divDerecho=document.getElementById('div-derecho');
-
-    divDerecho.style.textAlign="unset";
-    divDerecho.style.justifyContent="unset";
-    divDerecho.style.alignItems="unset";
     document.getElementById('div-salida-inicial').style.display="none";
 }
 

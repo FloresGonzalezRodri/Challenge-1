@@ -10,12 +10,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <img src="imagenes/alura.png" id="img-alura">
+        <header>
+            <img src="imagenes/alura.png" id="img-alura">
+        </header>
 
-        <div id="principal">
+        <section id="principal">
             <div id="div-izquierdo">
                 <textarea id="entrada" placeholder="Ingresa el texto aquí" oninput="verificarEntrada()"></textarea>
                 <div id="div-botones">
+                <p id="p-restricciones"><img src="imagenes/Vector.png"> Solo letras minúsculas y sin acentos</p>
+
                     <button id="button-encriptar" type="button" onclick="encriptar()">Encriptar</button>
                     <button id="button-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
                 </div>            
@@ -25,19 +29,24 @@
                 <p id="salida"></p>
                 <div id="div-salida-inicial">
                     <img src="imagenes/muneco.png">
-                    <div>
-                        <p><strong>Ningún mensaje fue encontrado</strong></p>
-                        <p id="p-subleyenda">Ingresa el texto que deseas<br>encriptar o desencriptar</p>
-                    </div> 
+                    <p id="p-leyenda">
+                        <strong>Ningún mensaje fue encontrado</strong><br>
+                        <span id="span-subleyenda">
+                            Ingresa el texto que deseas<br>
+                            encriptar o desencriptar
+                        </span>
+                    </p>
                 </div>   
                 <button type="button" id="button-copiar" onclick="copiarTextoAlPortapapeles()">Copiar</button>                           
             </div>
 
-        </div>
+        </section>
         <footer>
-            Desarrollado por: Flores Gonzalez Rodrigo<br>
-             
-            Desafio propuesto por: Ellen Prado Pimentel & Barbara dos Santos
+            <strong>
+                Desarrollado por: Flores Gonzalez Rodrigo<br>
+                
+                Desafio propuesto por: Ellen Prado Pimentel & Barbara dos Santos
+            </strong>
         </footer>    
         <script src="encriptador.js"></script>
     </body>
