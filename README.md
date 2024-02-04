@@ -33,7 +33,7 @@
 ###
 
 <div align="center">
-  ![insignia-challenge-1](https://github.com/FloresGonzalezRodri/Challenge-1/assets/154573429/064e3752-8666-41fb-b5e9-1fb4007d7f7b)
+  (https://github.com/FloresGonzalezRodri/Challenge-1/assets/154573429/064e3752-8666-41fb-b5e9-1fb4007d7f7b)
 
 </div>
 
