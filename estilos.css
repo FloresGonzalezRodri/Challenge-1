@@ -11,16 +11,13 @@ body
     /*Caja*/
     display: flex;
     align-items: center;
-
     /*Disposicion del contenido*/
-    justify-content: center;
-    align-self: self-start;
+    justify-content:space-evenly;
 }
 
 #entrada
 {
     /*Caja*/
-    display: block;
     padding: 10px;
     margin-bottom: 10px;
     height: 250px;
@@ -62,9 +59,11 @@ button
 #div-izquierdo
 {
     /*Caja*/
-    display: inline-block;
-    margin-right: 10%;
+    display: flex;
+    height: fit-content;
 
+    flex-direction: column;
+    width: fit-content;
     /*Contenido*/
     text-align: center;
 }
@@ -72,7 +71,6 @@ button
 #div-botones
 {
     /*Caja*/
-    display: inline-block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -83,10 +81,9 @@ button
     display: flex;
     flex-direction: column;
     border: solid;
-    margin-left: 10%;
     background-color: white;
-    width: 280px;
-    min-height: 500px;
+    max-width: 280px;
+    height: 500px;
     border-radius: 32px;
     padding: 20px;
     /*Centrar imagen horizontalmente*/
@@ -107,17 +104,23 @@ strong p
     font-size: 12px;
 }
 
-img
+img[src="imagenes/muneco.png"]
 {
     max-width: 80%;
     height: auto;
     margin-bottom: 10%;
 }
 
+img[src="imagenes/alura.png"]
+{
+    position: absolute;
+    top: 30px;
+    left: 2%;
+}
+
 #button-copiar
 {
-    /*Alinear */
-    margin-top: auto;
+    align-self: flex-end;
     /*Alinear horizontalmente al centro solo este elemento */
     margin-left: auto;
     margin-right: auto; 
@@ -127,4 +130,17 @@ img
 {
     width: 75px;
     margin-bottom: 0px;
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    background: linear-gradient(to bottom, #033e72, #001f3f);
+
+    color: white;
+    margin-top: 50px;
 }
